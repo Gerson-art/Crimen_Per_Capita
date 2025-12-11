@@ -23,7 +23,7 @@ Para ejecutar este proyecto, necesitas tener instalado y en ejecución:
 3.  **MongoDB Server** (Puerto por defecto: `27017`).
 
 ### Archivos de Datos
-El sistema requiere dos archivos CSV en la raíz del proyecto (no incluidos en el repositorio por razones de privacidad):
+El sistema requiere dos archivos CSV en la raíz del proyecto (incluidos en el repositorio en un archivo .rar):
 * `poblacion.csv`: Proyecciones del INE (columnas requeridas: `cut_comuna`, `población`, `año`).
 * `output.csv`: Base de datos de delitos (columnas requeridas: `fecha`, `delito`, `delito_n`, `cut_comuna`, `comuna`, `region`).
 
@@ -32,7 +32,7 @@ Recuerda que:
 - **`output.csv`** contiene los datos de delitos en Chile.
 - **`poblacion.csv`** contiene la población por comuna.
 
-Para asegurar el funcionamiento adecuado, coloca los siguientes scripts en la **misma carpeta** que ambos archivos CSV:
+Para asegurar el funcionamiento adecuado, coloca los siguientes scripts que tambien estan subidos, en la **misma carpeta** que ambos archivos CSV:
 
 - `cargar_final_2025.py`
 - `app_interactiva.py`
