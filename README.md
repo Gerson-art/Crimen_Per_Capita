@@ -27,6 +27,48 @@ El sistema requiere dos archivos CSV en la raíz del proyecto (no incluidos en e
 * `poblacion.csv`: Proyecciones del INE (columnas requeridas: `cut_comuna`, `población`, `año`).
 * `output.csv`: Base de datos de delitos (columnas requeridas: `fecha`, `delito`, `delito_n`, `cut_comuna`, `comuna`, `region`).
 
+Recuerda que:
+
+- **`output.csv`** contiene los datos de delitos en Chile.
+- **`poblacion.csv`** contiene la población por comuna.
+
+Para asegurar el funcionamiento adecuado, coloca los siguientes scripts en la **misma carpeta** que ambos archivos CSV:
+
+- `cargar_final_2025.py`
+- `app_interactiva.py`
+- `analisis_final.py`
+
+---
+
+## ⚠️ Indicaciones Importantes
+
+### 1. Configuración de ruta en `cargar_final_2025.py`
+Dentro del script existe la variable:
+
+```python
+path_archivo = 'ruta/a/poblacion.csv'
+```
+### 2. Uso de `app_interactiva.py`
+
+> **⚠️ Nota Importante:** La búsqueda es sensible a la escritura exacta.
+
+Para obtener resultados, debes ingresar el nombre de la comuna respetando mayúsculas, tildes y sin espacios adicionales.
+
+* ✅ **Correcto:** `Temuco`
+* ❌ **Incorrecto:** `teumco` (errores de tipeo)
+* ❌ **Incorrecto:** `Temuco ` (espacios al final)
+
+Si la entrada no coincide exactamente, el programa no podrá procesar la solicitud.
+
+---
+
+### 3. Visualización en `analisis_final.py`
+
+Este script genera un gráfico estadístico diseñado para comparar la criminalidad entre zonas de forma clara. La visualización incluye:
+
+* Las **5 regiones más peligrosas** de Chile.
+* La **tasa de delitos** calculada por cada 100.000 habitantes.
+
 ## 🛠️ Instalación y Configuración
 
 1.  **Clonar el repositorio:**
