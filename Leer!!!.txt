@@ -1,0 +1,18 @@
+Hola!, este es un tutorial para poner en marcha el código. Recuerda que el archivo output.csv contiene la información de los delitos en Chile 
+y poblacion.csv la población por comunas.
+
+Para el correcto funcionamiento, asegúrate de que los siguientes scripts estén en la misma carpeta que los archivos CSV:
+
+-cargar_final_2025.py
+-app_interactiva.py
+-analisis_final.py
+
+Puntos importantes a considerar:
+
+En cargar_final_2025.py existe una variable llamada path_archivo; ahí debes especificar la ruta correcta donde se encuentra poblacion.csv.
+
+En app_interactiva.py, debes escribir los nombres de las comunas con exactitud (ej. "Temuco"). Si escribes con errores ortográficos 
+(como "teumco"), el programa no arrojará resultados.
+
+Finalmente, analisis_final.py generará un gráfico para visualizar las 5 regiones más peligrosas de Chile según la tasa de delitos por cada 
+100.000 habitantes.
